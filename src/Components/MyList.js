@@ -134,14 +134,18 @@ const data = [
 ]
 
 
-const List = () => {
-
+const List = (props) => {
+console.log(props.data)
     return (
         <div>
-        {data.map(() => {
-
-        }
-        <h1> {data[0].author}</h1>
+        <ul className="listContainer">
+            {data.map(elemenet =>{
+                return <li><span className="author">{elemenet.author}</span>
+                <span className="points">Points: {elemenet.points}</span><br/>
+                <span className="date">{elemenet.created_at}</span><br/>
+                <span className="title">{elemenet.title}</span></li>
+            })}
+        </ul>
         </div>
 
     );
