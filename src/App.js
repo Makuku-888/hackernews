@@ -1,21 +1,17 @@
 import React,{useState,useEffect} from 'react';
 import './App.css';
+import Header  from "./Components/Header";
 import List from './Components/MyList';
+import Footer from './Components/Footer';
+
 
 function App() {
-  const [content,setContent] = useState(null);
-
-useEffect(() => {
-fetch("http://hn.algolia.com/api/v1/search?tags=front_page")
-.then(res => res.json())
-.then(data => setContent());})
-// .catch(()=>console.log("Not work"))
-
-
   return (
     <>
+     <Header />
      <h1>Hackernews Clone</h1>
-     <List data={content}/>
+     <List />
+     <Footer />
     </>
   );
 }

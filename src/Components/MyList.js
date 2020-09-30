@@ -151,4 +151,5 @@ console.log(props.data)
     );
 }
 
-export default List
+
+export default List;
