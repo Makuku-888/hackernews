@@ -59,12 +59,23 @@ body {
 }
 .listContainer{
   /* background-color:salmon; */
-  list-style: none;
-  padding-left: 10px;
+  /* list-style: none; */
+  padding-left: 40px;
+}
+
+li {
+  height: 50px;
+  padding-top: 7px;
+  padding-left: 15px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.title {
+  color: black;
 }
 
 li:nth-child(even){
-  background-color: salmon
+  background-color: plum;
 }
 
 li:nth-child(odd){
@@ -72,5 +83,26 @@ li:nth-child(odd){
 }
 
 .author{
-  font-weight: 700;
+  font-style: italic;
 }
+
+.points, .author, .date {
+  margin-right: 10px;
+}
+
+.title {
+  font-weight: 600;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.search-container {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
