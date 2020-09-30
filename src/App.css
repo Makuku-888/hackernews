@@ -57,3 +57,20 @@ body {
   opacity: 85%;
   color: white;
 }
+.listContainer{
+  /* background-color:salmon; */
+  list-style: none;
+  padding-left: 10px;
+}
+
+li:nth-child(even){
+  background-color: salmon
+}
+
+li:nth-child(odd){
+  background-color: lightgray
+}
+
+.author{
+  font-weight: 700;
+}

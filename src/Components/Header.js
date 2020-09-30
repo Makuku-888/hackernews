@@ -8,10 +8,10 @@ function Header() {
     return <>
     <nav className="nav">
     <div className="logo">News<span>Bot</span></div>
-		<a>Home</a>
-        <a>About</a>
-		<a>News</a>
-		<a>Contact</a>
+      <a href="google.com">Home</a>
+        <a href="google.com">About</a>
+      <a href="google.com">News</a>
+      <a href="google.com">Contact</a>
     </nav>
     <div className="header">
     </div>
