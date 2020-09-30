@@ -1,7 +1,9 @@
 import React from 'react';
 import './App.css';
-import List from './Components/MyList';
 import Header  from "./Components/Header";
+import List from './Components/MyList';
+import Footer from './Components/Footer';
+
 
 function App() {
   return (
@@ -9,6 +11,7 @@ function App() {
      <Header />
      <h1>Hackernews Clone</h1>
      <List />
+     <Footer />
     </>
   );
 }
