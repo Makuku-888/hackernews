@@ -1,18 +1,21 @@
 import React from "react";
 import "../App.css";
+import logo from "./logo.png"
 
+console.log(logo);
 
 function Header() {
-    return <div className="header">
-       <nav>
-           <a>Home</a>
-           <a>About</a>
-           <a>News</a>
-           <input className="search" type="text" placeholder="type your search"></input>
-           <button>search</button> 
-       </nav>
+    return <>
+    <nav className="nav">
+    <div className="logo">News<span>Bot</span></div>
+		<a>Home</a>
+        <a>About</a>
+		<a>News</a>
+		<a>Contact</a>
+    </nav>
+    <div className="header">
     </div>
-    
+    </>
 } 
 
 
