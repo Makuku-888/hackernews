@@ -1,8 +1,5 @@
 import React from "react";
 import "../App.css";
-import logo from "./logo.png"
-
-console.log(logo);
 
 function Header() {
     return <>
