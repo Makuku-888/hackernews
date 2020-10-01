@@ -64,15 +64,16 @@ body {
 }
 
 .footer {
+  width: 20%;
+  padding: 1em;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
-.footer img {
-  padding: 2em;
+.footerContainer p {
+  font-size: small;
 }
-
 
 .listContainer{
   /* background-color:salmon; */

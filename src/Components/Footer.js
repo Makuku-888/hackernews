@@ -12,7 +12,7 @@ function Footer() {
             <img src={instagram} alt="instagram" href="https://www.instagram.com/"></img>
             <img src={youtube} alt="youtube" href="https://www.youtube.com/"></img>
         </div>
-        <p>Copyright © 2015 - Lil Hacker Creative</p>
+        <p>Copyright © 2015 - Lil Hackers Creative</p>
         </div>
     </>
 }
