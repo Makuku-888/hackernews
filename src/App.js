@@ -7,7 +7,7 @@ import Footer from './Components/Footer';
 import './App.css';
 
 const INITIAL_QUERY = "blockchain";
-const LIMIT = "&hitsPerPage=20";
+const LIMIT = "&hitsPerPage=30";
 
 function App() {
 
@@ -17,14 +17,21 @@ function App() {
   const [error, setError] = useState(false);
   
   useEffect(() => {
+    console.log("from useEffect:", query)
+
     setSpinner(true);
     setError(false);
 
     const getData = () => {
-      fetch(`https://hn.algolia.com/api/v1/search_by_date?query=${query}${LIMIT}`)
+      fetch(`https://hn.algolia.com/api/v1/search?query=${query}${LIMIT}`)
         .then((res) => res.json())
         .then(data => {
           console.log(data.hits)
+          console.log("query from within fetch:", query)
+          console.log("from fetch:", data.hits)
+          for (let title of data.hits) {
+            console.log(title.title);
+          }
           setContent(data.hits);
           setSpinner(false);
         })
@@ -34,6 +41,7 @@ function App() {
     let id = setInterval(() => getData(), 300000);
     return () => clearInterval(id); // will only run when comp is unmounted!
   }, [query]);
+  
     
   return (
     <>
