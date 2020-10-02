@@ -1,4 +1,5 @@
 import React from "react";
+import { FaSearch } from "react-icons/fa";
 
 const SearchBar = (props) => {
 
@@ -15,8 +16,8 @@ const SearchBar = (props) => {
     return (
         <div className="search-container">
             <form className="search" onSubmit={handleSubmit}>
-                <input type="text"></input>
-                <button>search topic</button>
+                <input className="input" type="text" placeholder="search news"></input>
+                <button className="searchButton"><FaSearch /></button>
             </form>
       </div>
     );
